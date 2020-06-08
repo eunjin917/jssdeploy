@@ -6,7 +6,7 @@ from django.http import Http404
 def index(request):
     myjss = Jasoseol.objects.all()
 
-    return render(request, 'index.html',{'myjss':myjss}
+    return render(request, 'index.html',{'myjss':myjss})
 
 def create(request):
     if request.method == "POST":
